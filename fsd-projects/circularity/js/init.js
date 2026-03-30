@@ -98,7 +98,14 @@ game.checkCirclePosition(circles[ 3 ])
 game.checkCirclePosition(circles[ 4 ])
 
             // TODO 8 / TODO 9 : Iterate over the array
-           
+            for (var i = 0; i < circles.length; i++) {
+
+               physikz.updatePosition(circles[i]);
+
+               game.checkCirclePosition(circles[i]);
+
+
+}
             
         }
     

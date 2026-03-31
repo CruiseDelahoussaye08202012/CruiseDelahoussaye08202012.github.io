@@ -20,11 +20,17 @@ var init = function (window) {
         ///////////////////
         
         // TODO 1 : Declare and initialize our variables
-var circles = []
+var circle
+
+var circles = [ ]
 
 
         // TODO 2 : Create a function that draws a circle 
-        function drawCircle(){
+       function drawCircle() {
+
+        
+
+        }
           circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
 
               physikz.addRandomVelocity(circle, canvas, 2, 2);
@@ -81,12 +87,29 @@ for (var i = 0; i < circles.length; i++) {
                physikz.updatePosition(circles[i]);
 
                game.checkCirclePosition(circles[i]);
+physikz.updatePosition(circles[ 0 ])
+
+physikz.updatePosition(circles[ 1 ])
+
+physikz.updatePosition(circles[ 2 ])
+
+physikz.updatePosition(circles[ 3 ])
+
+physikz.updatePosition(circles[ 4 ])
 
 
 }
             
             // TODO 5 : Call game.checkCirclePosition() on your circles
            game.checkCirclePosition(circles[ 0 ])
+
+game.checkCirclePosition(circles[ 1 ])
+
+game.checkCirclePosition(circles[ 2 ])
+
+game.checkCirclePosition(circles[ 3 ])
+
+game.checkCirclePosition(circles[ 4 ])
 
 
 
@@ -99,16 +122,8 @@ for (var i = 0; i < circles.length; i++) {
 
 
 }
-            game.checkCirclePosition(circles[ 0 ])
-
-game.checkCirclePosition(circles[ 1 ])
-
-game.checkCirclePosition(circles[ 2 ])
-
-game.checkCirclePosition(circles[ 3 ])
-
-game.checkCirclePosition(circles[ 4 ])
-        }
+        
+        
     
         /* 
         This Function should check the position of a circle that is passed to the 
